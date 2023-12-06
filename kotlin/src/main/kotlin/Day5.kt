@@ -42,7 +42,7 @@ fun day5() {
             l = MutableList<Long>(l.size) { -1 }.apply l@{
                 set.forEach { t ->
                     this.forEachIndexed { i, _ ->
-                        if(this[i] < 0) t.translate(l[i]).takeIf { it != null }?.apply {
+                        if(this[i] < 0) t.translate(l[i])?.apply {
                             this@l[i] = this
                         }
                     }
