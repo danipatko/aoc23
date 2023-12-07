@@ -10,6 +10,9 @@ class Input(private val day: Int, private val part: Int = 1) {
         return content.split("\n").filter { it.isNotEmpty() }
     }
 
-    val example: String get() = "Time:      7  15   30\n" +
-                                "Distance:  9  40  200"
+    val example: String get() = "32T3K 765\n" +
+            "T55J5 684\n" +
+            "KK677 28\n" +
+            "KTJJT 220\n" +
+            "QQQJA 483"
 }
