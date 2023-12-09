@@ -10,9 +10,14 @@ class Input(private val day: Int, private val part: Int = 1) {
         return content.split("\n").filter { it.isNotEmpty() }
     }
 
-    val example: String get() = "32T3K 765\n" +
-            "T55J5 684\n" +
-            "KK677 28\n" +
-            "KTJJT 220\n" +
-            "QQQJA 483"
+    val example: String get() = "LR\n" +
+            "\n" +
+            "11A = (11B, XXX)\n" +
+            "11B = (XXX, 11Z)\n" +
+            "11Z = (11B, XXX)\n" +
+            "22A = (22B, XXX)\n" +
+            "22B = (22C, 22C)\n" +
+            "22C = (22Z, 22Z)\n" +
+            "22Z = (22B, 22B)\n" +
+            "XXX = (XXX, XXX)"
 }
