@@ -7,17 +7,10 @@ class Input(private val day: Int, private val part: Int = 1) {
     }
 
     val lines: List<String> get() {
-        return content.split("\n").filter { it.isNotEmpty() }
+        return content.replace("\r", "").split("\n").filter { it.isNotEmpty() }
     }
 
-    val example: String get() = "LR\n" +
-            "\n" +
-            "11A = (11B, XXX)\n" +
-            "11B = (XXX, 11Z)\n" +
-            "11Z = (11B, XXX)\n" +
-            "22A = (22B, XXX)\n" +
-            "22B = (22C, 22C)\n" +
-            "22C = (22Z, 22Z)\n" +
-            "22Z = (22B, 22B)\n" +
-            "XXX = (XXX, XXX)"
+    val example: String get() = "0 3 6 9 12 15\n" +
+            "1 3 6 10 15 21\n" +
+            "10 13 16 21 30 45"
 }
