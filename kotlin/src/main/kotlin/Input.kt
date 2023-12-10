@@ -10,7 +10,13 @@ class Input(private val day: Int, private val part: Int = 1) {
         return content.replace("\r", "").split("\n").filter { it.isNotEmpty() }
     }
 
-    val example: String get() = "0 3 6 9 12 15\n" +
-            "1 3 6 10 15 21\n" +
-            "10 13 16 21 30 45"
+    val example: String get() = "..........\n" +
+            ".S------7.\n" +
+            ".|F----7|.\n" +
+            ".||....||.\n" +
+            ".||....||.\n" +
+            ".|L-7F-J|.\n" +
+            ".|..||..|.\n" +
+            ".L--JL--J.\n" +
+            "..........\n"
 }
