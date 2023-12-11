@@ -57,11 +57,10 @@ private class Area(input: String) {
 }
 
 fun day10() {
-    Input(10).content.replace("\r", "").apply {
-        Area(this).apply {
-            val ans = solve()
-            println("part 1: $ans")
-            println(this)
-        }
+    Area(Input(10).content).apply {
+        val ans = solve()
+        println("part 1: $ans")
+        println(this)
     }
 }
+
